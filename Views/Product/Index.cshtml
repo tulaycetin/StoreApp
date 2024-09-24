@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Product>
+
+@{
+    Layout = "_Layout";
+}
+
+
+<div class="row my-3">
+
+    @foreach (Product prd in Model)
+    {
+        <partial name="_ProductCard" model="@prd" />
+
+    }
+
+</div>
+
+    
+    

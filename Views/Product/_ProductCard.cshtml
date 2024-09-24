@@ -1,0 +1,18 @@
+﻿@model Product
+
+<div class="col-sm-2 col-md-3 my-2">
+    <div class="card" style="width: 18rem;">
+        <img src="/images/images (1).jpg" class="card-img-top" alt="Product Image">
+        <div class="card-body">
+            <h5 class="card-title">@Model.productName</h5>
+            <p class="card-text">
+                Kartın içindeki açıklayıcı metni dinamik hale getirirsen, her ürün için farklı açıklamalar gösterebilirsin.
+            </p>
+            <a asp-controller="Product" asp-action="Get" asp-route-id="@Model.ID"
+               class="btn btn-outline-primary">
+                <i class="fa-solid fa-arrow-right"></i>
+                Product Get
+            </a>
+        </div>
+    </div>
+</div>
